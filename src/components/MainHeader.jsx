@@ -1,9 +1,5 @@
 const MainHeader = () => {
-  return (
-    <div>
-      MainHeader
-    </div>
-  )
-}
+  return <div>MainHeader</div>;
+};
 
-export default MainHeader
+export default MainHeader;
