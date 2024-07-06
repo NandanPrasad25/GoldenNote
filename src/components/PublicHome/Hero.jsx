@@ -5,6 +5,8 @@ import image4 from "../../assets/carousel-4.jpeg";
 import image5 from "../../assets/carousel-5.jpeg";
 
 const Hero = () => {
+  let slides = [image1, image2, image3, image4, image5];
+
   return (
     <div className="bg-slate-900 text-yellow-200 flex flex-col items-center px-7 py-16 text-center max-w-screen-2xl mx-auto">
       <h1 className="text-[40px] font-semibold mb-3 xl:text-[43px]">
@@ -15,7 +17,9 @@ const Hero = () => {
         your valuable notes and not about anything else
       </p>
 
-      <div
+      
+
+      {/* <div
         id="animation-carousel"
         className="relative w-full"
         data-carousel="static"
@@ -79,7 +83,7 @@ const Hero = () => {
                 d="M5 1 1 5l4 4"
               />
             </svg>
-            <span className="sr-only">Previous</span>
+            <span onClick={() => prev()} className="sr-only">Previous</span>
           </span>
         </button>
         <button
@@ -106,7 +110,7 @@ const Hero = () => {
             <span className="sr-only">Next</span>
           </span>
         </button>
-      </div>
+      </div> */}
 
       <a
         href="#"
