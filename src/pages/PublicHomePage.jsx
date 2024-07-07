@@ -1,6 +1,6 @@
-import Header from "../components/PublicHome/Header";
-import Hero from "../components/PublicHome/Hero";
-import Footer from "../components/PublicHome/Footer";
+import Header from "../components/PublicHome/Home/Header";
+import Hero from "../components/PublicHome/Home/Hero";
+import Footer from "../components/PublicHome/Home/Footer";
 
 const PublicHomePage = () => {
   return (

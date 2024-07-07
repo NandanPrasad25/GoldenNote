@@ -1,29 +1,31 @@
-import image1 from "../../assets/carousel-1.jpeg";
-import image2 from "../../assets/carousel-2.jpeg";
-import image3 from "../../assets/carousel-3.jpeg";
-import image4 from "../../assets/carousel-4.jpeg";
-import image5 from "../../assets/carousel-5.jpeg";
+/* eslint-disable no-unused-vars */
+import { NavLink } from "react-router-dom";
+import image1 from "../../../assets/carousel-1.jpeg";
+import image2 from "../../../assets/carousel-2.jpeg";
+import image3 from "../../../assets/carousel-3.jpeg";
+import image4 from "../../../assets/carousel-4.jpeg";
+import image5 from "../../../assets/carousel-5.jpeg";
 
 const Hero = () => {
   let slides = [image1, image2, image3, image4, image5];
 
   return (
     <div className="bg-slate-900 text-yellow-200 flex flex-col items-center px-7 py-16 text-center max-w-screen-2xl mx-auto">
+
       <h1 className="text-[40px] font-semibold mb-3 xl:text-[43px]">
         Welcome to GoldenNote !
       </h1>
+
       <p className="text-xl text-slate-300 mb-14">
         The Digital Note taking Solution with minimalistic UI to simply focus on
         your valuable notes and not about anything else
       </p>
 
-      
-
-      {/* <div
+{/* Image Carousel */}
+      <div
         id="animation-carousel"
         className="relative w-full"
         data-carousel="static"
-
       >
         <div className="relative h-[16rem] overflow-hidden rounded-lg md:h-96">
           <div className="duration-200 ease-linear" data-carousel-item>
@@ -83,7 +85,7 @@ const Hero = () => {
                 d="M5 1 1 5l4 4"
               />
             </svg>
-            <span onClick={() => prev()} className="sr-only">Previous</span>
+            <span className="sr-only">Previous</span>
           </span>
         </button>
         <button
@@ -110,15 +112,16 @@ const Hero = () => {
             <span className="sr-only">Next</span>
           </span>
         </button>
-      </div> */}
+      </div>
 
-      <a
-        href="#"
+{/* Signup Link */}
+      <NavLink
+        to="/signup"
         type="button"
         className="text-slate-800 font-semibold bg-blue-700 hover:bg-blue-800 focus:ring-4 inline-flex w-[30%] justify-center focus:outline-none focus:ring-blue-300 rounded-lg text-lg px-4 py-2 mt-9 text-center dark:bg-slate-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
         Create Your Free Account
-      </a>
+      </NavLink>
     </div>
   );
 };
