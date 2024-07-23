@@ -4,7 +4,7 @@ import logo from "../../../assets/freepik-export-20240705145406n7cJ.png"
 const Header = () => {
   return <div>
     <nav className="bg-white dark:bg-gray-900">
-        <div className=" w-[94%] xl:w-[97%] max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto py-5  border-gray-500 border-b-2">
+        <div className=" w-[94%] xl:w-[97%] max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto py-3  border-gray-500 border-b-[1px]">
             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src={logo} className="h-8" alt="Logo" />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GoldenNote</span>

@@ -4,11 +4,9 @@ import Footer from "../components/PublicHome/Home/Footer";
 
 const PublicHomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-between">
-      <div className="flex-col">
-        <Header />
-        <Hero />
-      </div>
+    <div className="flex flex-col h-screen">
+      <Header />
+      <Hero />
       <Footer />
     </div>
   );
